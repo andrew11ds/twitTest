@@ -1,7 +1,14 @@
+import { Helmet } from "react-helmet";
 const Profile = () => {
     return (
 
-        <h2>Your profile</h2>
+        <>
+            <Helmet>
+                <title>Login</title>
+                <meta name="description" content="Password recovery section" />
+            </Helmet>
+            <h2>Your profile</h2>
+        </>
 
     );
 }

@@ -1,6 +1,12 @@
+import { Helmet } from "react-helmet";
 const SignUp = () => {
     return (
         <>
+
+            <Helmet>
+                <title>Search</title>
+                <meta name="description" content="Sign up section" />
+            </Helmet>
             <h2>Sign up</h2>
 
             <form>

@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 
-const App2 = () => {
+const App = () => {
     return (
+
         <nav>
             <ul>
                 <li><Link to="/">Home</Link></li>
@@ -19,4 +20,4 @@ const App2 = () => {
     );
 }
 
-export default App2;
+export default App;

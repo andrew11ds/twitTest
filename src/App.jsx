@@ -13,8 +13,12 @@ import Search from './components/Search';
 const App = () => {
   return (
     <main>
+      <Helmet>
+        <title>SabanaTweet</title>
+        <meta name="description" content="Tweeter test" />
+      </Helmet>
       <BrowserRouter>
-        <h1>App</h1>
+        <h1>SabanaTweet</h1>
         <Nav />
 
         <Switch>

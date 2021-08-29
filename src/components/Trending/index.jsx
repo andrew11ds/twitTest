@@ -1,7 +1,13 @@
+import { Helmet } from "react-helmet";
 const Trending = () => {
     return (
-
-        <h2>Trending</h2>
+        <>
+            <Helmet>
+                <title>Trending</title>
+                <meta name="description" content="Trending section" />
+            </Helmet>
+            <h2>Trending</h2>
+        </>
 
     );
 }
