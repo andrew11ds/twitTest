@@ -4,10 +4,8 @@ const PasswordRecovery = () => {
             <h2>Password Recovery</h2>
 
             <form>
-                <label>
-                    Name:
-                    <input type="text" name="email address" />
-                </label>
+                <label htmlFor="namedInput">Email:</label>
+                <input id="namedInput" type="text" name="email" />
                 <input type="submit" value="Submit" />
             </form>
         </>
