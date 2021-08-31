@@ -14,6 +14,7 @@ const App = () => {
                 <li><Link to="/tweets">Tweets</Link></li>
                 <li><Link to="/trending">Trending</Link></li>
                 <li><Link to="/search">Search</Link></li>
+                <li><Link to="/test">Test</Link></li>
 
             </ul>
         </nav>

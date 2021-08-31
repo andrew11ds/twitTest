@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import Nav from './components/Nav';
 import routes from './lib/routes';
 
+
 const App = () => {
   const { restricted, unrestricted } = routes;
   return (
@@ -13,8 +14,7 @@ const App = () => {
       </Helmet>
       <BrowserRouter>
         <h1>SabanaTweet</h1>
-        <Nav />
-
+      
         <Switch>
           {
             restricted.map(({ path, component }) =>

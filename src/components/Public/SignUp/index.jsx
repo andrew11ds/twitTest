@@ -10,8 +10,8 @@ const SignUp = () => {
             <h2>Sign up</h2>
 
             <form>
-                <label htmlFor="userNameInput">User Name:</label>
-                <input id="UsernameInput" type="text" name="userName" />
+                <label htmlFor="usernameInput">User Name:</label>
+                <input id="usernameInput" type="text" name="userName" />
                 <label htmlFor="emailInput">Email:</label>
                 <input id="emailInput" type="text" name="email" />
                 <label htmlFor="passInput">Password:</label>
