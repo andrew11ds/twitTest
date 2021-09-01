@@ -1,8 +1,13 @@
+import { Helmet } from "react-helmet";
 const Tweets = () => {
     return (
-
-        <h2>Your tweets</h2>
-
+        <>
+            <Helmet>
+                <title>Tweets</title>
+                <meta name="description" content="Tweet section" />
+            </Helmet>
+            <h2>Your tweets</h2>
+        </>
     );
 }
 
