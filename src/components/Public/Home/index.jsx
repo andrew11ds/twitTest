@@ -1,16 +1,16 @@
-import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap';
+import { Row, Col, Form, Button, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from "./../../../images/tweetlogo.jpg";
 import rectangle from "./../../../images/rectangle.jpg";
-const Home = () => <Container>
+const Home = () => <div class="container-responsive">
     <Row>
         <Col >
-            <img src={rectangle} />
+            <img src={rectangle} class="img-responsive w-100" />
 
         </Col>
 
-        <Col  >
-            <img src={logo} className="img-fluid" alt="" />
+        <Col >
+            <img src={logo} className="img-responsive" alt="" />
             <h2>Welcome to SabanaTweet</h2>
 
             <div className="d-grid gap-2">
@@ -30,7 +30,7 @@ const Home = () => <Container>
 
     </Row>
 
-</Container>;
+</div>;
 
 
 
