@@ -20,7 +20,7 @@ const Home = () => <Container>
                 </Button> </Link>
 
             </div>
-            <p>Don't have an account?  <Link to="/passwordrecovery">Join free today </Link> </p>
+            <p>Don't have an account?  <Link to="/signup">Join free today </Link> </p>
 
             <Button variant="secondary" size="lg">
                 Sign up
