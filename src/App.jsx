@@ -13,8 +13,6 @@ const App = () => {
         <meta name="description" content="Tweeter test" />
       </Helmet>
       <BrowserRouter>
-        <h1>SabanaTweet</h1>
-      
         <Switch>
           {
             restricted.map(({ path, component }) =>

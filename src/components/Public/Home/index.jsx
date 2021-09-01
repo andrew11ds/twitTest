@@ -1,43 +1,39 @@
 import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import logo from "./../../../images/tweetlogo.jpg";
-const Home = () => {
-    return (
-        <>
-            <Container>
-                <Row>
-                    <Col>Parte izq</Col>
-                    <Col>
-                    
-                        <img src={logo} className="img-fluid" alt="" />
-                        <h6>SabanaTweet</h6>
-                        <h2>Login to your account</h2>
-                        <h6>Email or username</h6>
-                        <Form>
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
-                                <Form.Label>Email address</Form.Label>
-                                <Form.Control type="email" placeholder="Enter email" />
-                            </Form.Group>
+import rectangle from "./../../../images/rectangle.jpg";
+const Home = () => <Container>
+    <Row>
+        <Col >
+            <img src={rectangle} />
 
-                            <Form.Group className="mb-3" controlId="formBasicPassword">
-                                <Form.Label>Password</Form.Label>
-                                <Form.Control type="password" placeholder="Password" />
-                            </Form.Group>
-                            <Form.Group className="mb-3" controlId="formBasicCheckbox">
+        </Col>
 
-                            </Form.Group>
-                            <div className="d-grid gap-2">
-                                <Button variant="primary" size="lg">
-                                    Login now
-                                </Button>
+        <Col  >
+            <img src={logo} className="img-fluid" alt="" />
+            <h2>Welcome to SabanaTweet</h2>
 
-                            </div>
-                        </Form>
-                    </Col>
-                </Row>
+            <div className="d-grid gap-2">
 
-            </Container>
-        </>
-    );
-}
+                <Link to="/login"> <Button variant="primary" size="lg">
+                    Login now
+                </Button> </Link>
+
+            </div>
+            <p>Don't have an account?  <Link to="/passwordrecovery">Join free today </Link> </p>
+
+            <Button variant="secondary" size="lg">
+                Sign up
+            </Button>
+
+        </Col>
+
+    </Row>
+
+</Container>;
+
+
 
 export default Home;
+
+
