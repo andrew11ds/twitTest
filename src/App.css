@@ -16,13 +16,6 @@
 }
 
 
-.abs-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
-
 
 .App-header {
   background-color: #282c34;
@@ -39,10 +32,7 @@
   color: #61dafb;
 }
 
-.centerBlock {
-  display: table;
-  margin: auto;
-}
+
 
 @keyframes App-logo-spin {
   from {

@@ -8,7 +8,9 @@ const Login = () => <div class="container-fluid vh-100">
 
         <div class="col-auto p-5 block-center mb-3">
             <div class="mb-3">
-                <img src={logo} class="img-fluid mb-3" alt="" />
+                <Link to="/">
+                    <img src={logo} class="img-responsive mb-3" alt="" />
+                </Link>
 
                 <h6>SabanaTweet</h6>
                 <h2>Login to your account</h2>
@@ -33,7 +35,10 @@ const Login = () => <div class="container-fluid vh-100">
 
                 <div class="row mb-3">
                     <div class="d-grid gap-2 mb-3">
-                        <button type="button" class="btn w-100 btn-primary btn-lg btn-block">Login now</button>
+                        <Link to="/home">
+                            <button type="button" class="btn w-100 btn-primary btn-lg btn-block">Login now</button>
+                        </Link>
+
 
                     </div>
 
