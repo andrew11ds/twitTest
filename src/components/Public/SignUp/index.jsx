@@ -3,38 +3,59 @@ import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from "./../../../images/tweetlogo.jpg";
 import rectangle from "./../../../images/rectangle.jpg";
-const SignUp = () => < Container >
-    <Row>
+const SignUp = () => <div class="container-fluid vh-100" >
+    <div class="m-0 vh-100 row justify-content-center align-items-center ">
 
-        <Col>
+        <div class="col-auto p-7 block-center mb-3">
 
-            <img src={logo} className="img-fluid" alt="" />
-            <h6>SabanaTweet</h6>
-            <h2>Create your account</h2>
+            <div class="mb-5">
+                <img src={logo} className="img-fluid mb-3" alt="" />
+                <h6>SabanaTweet</h6>
+                <h2>Create your account</h2>
+            </div>
+
+
             <Form>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
-                </Form.Group>
+                <div class="mb-4">
+                    <Form.Group className="mb-3" controlId="formBasicName">
+                        <Form.Label>Name</Form.Label>
+                        <Form.Control type="name" placeholder="Name" />
+                    </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" />
-                </Form.Group>
-                <div className="d-grid gap-2">
-                    <Button variant="primary" size="lg">
-                        Login now
-                    </Button>
+                    <Form.Group className="mb-3" controlId="formBasicUsername">
+                        <Form.Label>Username</Form.Label>
+                        <Form.Control type="username" placeholder="Username" />
+                    </Form.Group>
+
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Email</Form.Label>
+                        <Form.Control type="email" placeholder="Email" />
+                    </Form.Group>
+
+                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                        <Form.Label>Password</Form.Label>
+                        <Form.Control type="password" placeholder="Password" />
+                    </Form.Group>
+
+                    <Form.Group className="mb-3" controlId="formBasicConfirmPassword">
+                        <Form.Label>Password Confirmation</Form.Label>
+                        <Form.Control type="password" placeholder="Confirm Password" />
+                    </Form.Group>
+                </div>
+
+                <div className="d-grid gap-2 mb-4">
+                    <button type="button" class="btn w-100 btn-primary btn-lg btn-block">Sign Up</button>
 
                 </div>
-                <p><Link to="/signup">Forgot password? </Link> </p>
 
             </Form>
+            <div class="text-center">
+                <p>Already have an account?  <Link to="/login">Login </Link> </p>
+            </div>
 
-            <p>Don't have an account?  <Link to="/signup">Join free today </Link> </p>
-        </Col>
-    </Row>
-</Container>;
+        </div>
+    </div>
+</div>;
 
 
 export default SignUp;
