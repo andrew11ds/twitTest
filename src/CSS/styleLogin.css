@@ -1,0 +1,41 @@
+.t-title-login{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.t-btn-login{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.t-text-login{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.t-text2-login{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.btn-properties-login{
+    width: 347px;
+    height: 50px;
+}
+
+.textfield-properties-login{
+    width: 350px;
+    height: 50px;
+}

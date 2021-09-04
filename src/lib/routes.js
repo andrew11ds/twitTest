@@ -8,6 +8,7 @@ import Timeline from './../components/Timeline';
 import Tweets from './../components/Tweets';
 import Trending from './../components/Trending';
 import Search from './../components/Search';
+import RecoverPassword from '../components/Public/RecoverPassword';
 
 
 const routes = {
@@ -33,6 +34,11 @@ const routes = {
             title: "Sign Up",
             path: "/signup",
             component: SignUp,
+        },
+        {
+            title: "Recover Password",
+            path: "/recoverpassword",
+            component: RecoverPassword,
         },
         {
             title: "Test",

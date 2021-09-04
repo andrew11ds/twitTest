@@ -3,56 +3,59 @@ import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from "./../../../images/tweetlogo.jpg";
 import rectangle from "./../../../images/rectangle.jpg";
-const SignUp = () => <div class="container-fluid vh-100" >
-    <div class="m-0 vh-100 row justify-content-center align-items-center ">
+import './../../../../src/App.css';
+import './../../../CSS/styleSignUp.css';
 
-        <div class="col-auto p-7 block-center mb-3">
+const SignUp = () => <div className="container-fluid vh-100" >
+    <div className="m-0 vh-100 row justify-content-center align-items-center ">
 
-            <div class="mb-5">
+        <div className="col-auto p-7 block-center mb-3">
+
+            <div className="mb-4">
                 <Link to="/">
-                    <img src={logo} class="img-responsive mb-3" alt="" />
+                    <img src={logo} className="img-responsive mb-3" alt="" />
                 </Link>
-                <h6>SabanaTweet</h6>
-                <h2>Create your account</h2>
+                <h6 className="t-text-sgu">SabanaTweet</h6>
+                <h2 className="t-title-sgu">Create your account</h2>
             </div>
 
 
             <Form>
-                <div class="mb-4">
+                <div className="mb-4">
                     <Form.Group className="mb-3" controlId="formBasicName">
-                        <Form.Label>Name</Form.Label>
-                        <Form.Control type="name" placeholder="Name" />
+                        <Form.Label className="t-text-sgu">Name</Form.Label>
+                        <Form.Control className="t-text2-sgu  textfield-properties-sgu" type="name" placeholder="Name" />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicUsername">
-                        <Form.Label>Username</Form.Label>
-                        <Form.Control type="username" placeholder="Username" />
+                        <Form.Label className="t-text-sgu">Username</Form.Label>
+                        <Form.Control className="t-text2-sgu  textfield-properties-sgu" type="username" placeholder="Username" />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Email</Form.Label>
-                        <Form.Control type="email" placeholder="Email" />
+                        <Form.Label className="t-text-sgu">Email</Form.Label>
+                        <Form.Control className="t-text2-sgu  textfield-properties-sgu" type="email" placeholder="Email" />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Label className="t-text-sgu">Password</Form.Label>
+                        <Form.Control className="t-text2-sgu  textfield-properties-sgu" type="password" placeholder="Password" />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicConfirmPassword">
-                        <Form.Label>Password Confirmation</Form.Label>
-                        <Form.Control type="password" placeholder="Confirm Password" />
+                        <Form.Label className="t-text-sgu" >Password Confirmation</Form.Label>
+                        <Form.Control className="t-text2-sgu  textfield-properties-sgu" type="password" placeholder="Confirm Password" />
                     </Form.Group>
                 </div>
 
                 <div className="d-grid gap-2 mb-4">
-                    <button type="button" class="btn w-100 btn-primary btn-lg btn-block">Sign Up</button>
+                    <button type="button" className="btn w-100 btn-primary btn-lg btn-block btn-properties-sgu">Sign Up</button>
 
                 </div>
 
             </Form>
-            <div class="text-center">
-                <p>Already have an account?  <Link to="/login">Login </Link> </p>
+            <div className="text-center">
+                <p className="t-text-sgu">Already have an account?  <Link to="/login">Login </Link> </p>
             </div>
 
         </div>
