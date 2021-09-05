@@ -26,9 +26,9 @@ const Timeline = () => <div class="container-responsive">
             <div class="m-3 vh-100 row justify-content-end align-items-end row-properties">
 
                 <div class="row">
-                    <div class="col ">
+                    <div class="col">
                         <Link class="color-text">
-                            <h2 class="t-text"> <img src={home} class="img-responsive img-icon" />Home</h2>
+                            <h2 class="t-text" > <img src={home} class=" img-responsive img-icon" />Home</h2>
                         </Link>
 
                     </div>
