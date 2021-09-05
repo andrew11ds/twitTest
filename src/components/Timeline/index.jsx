@@ -2,6 +2,7 @@ import { width } from 'dom-helpers';
 import { Row, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from "./../../images/tweetlogo.jpg";
+import './../../images/home.svg';
 import './../../CSS/styleTimeline.css';
 
 
@@ -18,6 +19,9 @@ const Timeline = () => <div class="container-responsive">
             <div class="m-3 vh-100 row justify-content-end align-items-end row-properties">
 
                 <div class="row">
+                    <div class="col">
+                        <svg class="icon icon-home"><use xlinkhref="#icon-home"></use></svg>
+                    </div>
                     <div class="col ">
                         <Link class="color-text">
                             <h2 class="t-text">Home</h2>
