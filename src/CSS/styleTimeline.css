@@ -146,3 +146,20 @@ a {
     width: 30.27px;
     height: 24.61px;
 }
+.icon-text {
+    /* Bookmarks */
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 22px;
+
+    /* Gray 1 */
+
+    color: #333333;
+}
+
+.icon-text:hover {
+    color: red;
+}
