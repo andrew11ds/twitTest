@@ -2,6 +2,14 @@ import { width } from 'dom-helpers';
 import { Row, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from "./../../images/tweetlogo.jpg";
+import home from "./../../icons/home.svg";
+import explore from "./../../icons/explore.svg";
+import notifications from "./../../icons/notifications.svg";
+import bookmarks from "./../../icons/bookmarks.svg";
+import messages from "./../../icons/messages.svg";
+import lists from "./../../icons/lists.svg";
+import profile from "./../../icons/profile.svg";
+import more from "./../../icons/more.svg";
 import './../../CSS/styleTimeline.css';
 
 
@@ -20,7 +28,7 @@ const Timeline = () => <div class="container-responsive">
                 <div class="row">
                     <div class="col ">
                         <Link class="color-text">
-                            <h2 class="t-text">Home</h2>
+                            <h2 class="t-text"> <img src={home} class="img-responsive img-icon" />Home</h2>
                         </Link>
 
                     </div>
@@ -28,7 +36,7 @@ const Timeline = () => <div class="container-responsive">
                 <div class="row">
                     <div class="col ">
                         <Link class="color-text">
-                            <h2 class="t-text">Explore</h2>
+                            <h2 class="t-text">  <img src={explore} class="img-responsive img-icon" /> Explore</h2>
                         </Link>
 
                     </div>
@@ -36,22 +44,14 @@ const Timeline = () => <div class="container-responsive">
                 <div class="row">
                     <div class="col ">
                         <Link class="color-text">
-                            <h2 class="t-text">Notifications</h2>
+                            <h2 class="t-text"> <img src={notifications} class="img-responsive img-icon" />Notifications</h2>
                         </Link>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col ">
                         <Link class="color-text">
-                            <h2 class="t-text">Messages</h2>
-                        </Link>
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col ">
-                        <Link class="color-text">
-                            <h2 class="t-text">Bookmarks</h2>
+                            <h2 class="t-text"><img src={messages} class="img-responsive img-icon" />Messages</h2>
                         </Link>
 
                     </div>
@@ -59,7 +59,7 @@ const Timeline = () => <div class="container-responsive">
                 <div class="row">
                     <div class="col ">
                         <Link class="color-text">
-                            <h2 class="t-text">Lists</h2>
+                            <h2 class="t-text"><img src={bookmarks} class="img-responsive img-icon" />Bookmarks</h2>
                         </Link>
 
                     </div>
@@ -67,14 +67,22 @@ const Timeline = () => <div class="container-responsive">
                 <div class="row">
                     <div class="col ">
                         <Link class="color-text">
-                            <h2 class="t-text">Profile</h2>
+                            <h2 class="t-text"><img src={lists} class="img-responsive img-icon" />Lists</h2>
+                        </Link>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col ">
+                        <Link class="color-text">
+                            <h2 class="t-text"><img src={profile} class="img-responsive img-icon" />Profile</h2>
                         </Link>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col ">
                         <Link class="color-text">
-                            <h2 class="t-text">More</h2>
+                            <h2 class="t-text"><img src={more} class="img-responsive img-icon" />More</h2>
                         </Link>
 
                     </div>
