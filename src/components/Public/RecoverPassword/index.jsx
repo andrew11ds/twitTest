@@ -4,7 +4,7 @@ import logo from "./../../../images/tweetlogo.jpg";
 import './../../../../src/App.css';
 import './../../../CSS/styleLogin.css';
 
-const Login = () => <div className="container-fluid vh-100">
+const RecoverPassword = () => <div className="container-fluid vh-100">
 
     <div className="m-0 vh-100 row justify-content-center align-items-center ">
 
@@ -15,30 +15,20 @@ const Login = () => <div className="container-fluid vh-100">
                 </Link>
 
                 <h6 className="t-text-login">SabanaTweet</h6>
-                <h2 className="t-title-login">Login to your account</h2>
+                <h2 className="t-title-login">Recover your password</h2>
             </div>
 
             <Form>
                 <div className="row mb-3">
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label className="t-text-login">Email or Username</Form.Label>
-                        <Form.Control className="t-text2-login textfield-properties-login" type="email" placeholder="Enter email" />
+                        <Form.Control className="t-text2-login textfield-properties-login" type="email" placeholder="Enter email or username" />
                     </Form.Group>
                 </div>
-                <div className="row mb-3">
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Label className="t-text-login">Password</Form.Label>
-                        <Form.Control className="t-text2-login textfield-properties-login" type="password" placeholder="Password" />
-                    </Form.Group>
-                </div>
-                <div className="row mb-3">
-                    <p className="t-text2-login"><Link to="/recoverpassword">Forgot password? </Link> </p>
-                </div>
-
                 <div className="row mb-3">
                     <div className="d-grid gap-2 mb-3">
-                        <Link to="/home">
-                            <button type="button" className="btn w-100 btn-primary btn-lg btn-block btn-properties-login">Login now</button>
+                        <Link to="/login">
+                            <button type="button" className="btn w-100 btn-primary btn-lg btn-block btn-properties-login">Recover your password</button>
                         </Link>
 
 
@@ -47,7 +37,7 @@ const Login = () => <div className="container-fluid vh-100">
                 </div>
             </Form>
             <div className="text-center">
-                <p className="t-text-login">Don't have an account?  <Link to="/signup">Join free today </Link> </p>
+                <p className="t-text-login">Return to  <Link to="/login">Login</Link> </p>
             </div>
 
 
@@ -57,4 +47,4 @@ const Login = () => <div className="container-fluid vh-100">
 </div>;
 
 
-export default Login;
+export default RecoverPassword;

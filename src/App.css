@@ -15,6 +15,34 @@
   }
 }
 
+.btn-primary {
+  color: #fff;
+  background-color: #1DA1F2;
+  border-color: #1DA1F2;
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: rgba(29, 161, 242, 0.5);
+  border-color: rgba(29, 161, 242, 0.5);
+}
+
+a {
+  color: #1DA1F2;
+  text-decoration: underline;
+}
+
+
+.btn-outline-primary {
+  color: #1DA1F2;
+  border-color: #1DA1F2;
+}
+
+.btn-outline-primary:hover {
+  background-color: #FFFFFF;
+  color: #B0B0B0;
+  border-color: #B0B0B0;
+}
+
 
 
 .App-header {
