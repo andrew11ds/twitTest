@@ -26,7 +26,7 @@ const Timeline = () => <div class="container-responsive">
             <div class="m-3 vh-100 row justify-content-end align-items-end row-properties">
 
                 <div class="row">
-                    <div class="col">
+                    <div class="col ">
                         <Link class="color-text">
                             <h2 class="t-text" > <img src={home} class=" img-responsive img-icon" />Home</h2>
                         </Link>
@@ -36,7 +36,7 @@ const Timeline = () => <div class="container-responsive">
                 <div class="row">
                     <div class="col ">
                         <Link class="color-text">
-                            <h2 class="t-text">  <img src={explore} class="img-responsive img-icon" /> Explore</h2>
+                            <h2 class="t-text">  <img src={explore} class="img-responsive img-icon " /> Explore</h2>
                         </Link>
 
                     </div>
@@ -96,12 +96,21 @@ const Timeline = () => <div class="container-responsive">
         </div >
 
         <div class="col-md-7 borders">
-            <div class="m-0 vh-100 row justify-content-center align-items-center ">
+            <div class="m-4 row justify-content-start align-items-start mb-3">
+                <h3 class="t-text">Home</h3>
+            </div>
+            <div class="m-4 row justify-content-start align-items-start ">
+                <div class="col-md-1">
+                    <img src={profile} class="img-fluit img-user" />
+                </div>
+                <div class="col">
+                    <h3 class="t-text">Annie</h3>
+                </div>
             </div>
         </div>
 
         <div class="col-md-3 border-left">
-            <div class="m-3 row justify-content-start align-items-start search-heigth">
+            <div class="m-3 vh-100 row justify-content-start align-items-start search-heigth">
                 <div class="row mb-3">
                     <Form>
                         <Form.Group class="mb-3" controlId="formBasicSearch">
