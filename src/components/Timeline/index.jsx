@@ -2,7 +2,14 @@ import { width } from 'dom-helpers';
 import { Row, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from "./../../images/tweetlogo.jpg";
-import './../../images/home.svg';
+import home from "./../../icons/home.svg";
+import explore from "./../../icons/explore.svg";
+import notifications from "./../../icons/notifications.svg";
+import bookmarks from "./../../icons/bookmarks.svg";
+import messages from "./../../icons/messages.svg";
+import lists from "./../../icons/lists.svg";
+import profile from "./../../icons/profile.svg";
+import more from "./../../icons/more.svg";
 import './../../CSS/styleTimeline.css';
 
 
@@ -19,12 +26,9 @@ const Timeline = () => <div class="container-responsive">
             <div class="m-3 vh-100 row justify-content-end align-items-end row-properties">
 
                 <div class="row">
-                    <div class="col">
-                        <svg class="icon icon-home"><use xlinkhref="#icon-home"></use></svg>
-                    </div>
                     <div class="col ">
                         <Link class="color-text">
-                            <h2 class="t-text">Home</h2>
+                            <h2 class="t-text" > <img src={home} class=" img-responsive img-icon" />Home</h2>
                         </Link>
 
                     </div>
@@ -32,7 +36,7 @@ const Timeline = () => <div class="container-responsive">
                 <div class="row">
                     <div class="col ">
                         <Link class="color-text">
-                            <h2 class="t-text">Explore</h2>
+                            <h2 class="t-text">  <img src={explore} class="img-responsive img-icon " /> Explore</h2>
                         </Link>
 
                     </div>
@@ -40,22 +44,14 @@ const Timeline = () => <div class="container-responsive">
                 <div class="row">
                     <div class="col ">
                         <Link class="color-text">
-                            <h2 class="t-text">Notifications</h2>
+                            <h2 class="t-text"> <img src={notifications} class="img-responsive img-icon" />Notifications</h2>
                         </Link>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col ">
                         <Link class="color-text">
-                            <h2 class="t-text">Messages</h2>
-                        </Link>
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col ">
-                        <Link class="color-text">
-                            <h2 class="t-text">Bookmarks</h2>
+                            <h2 class="t-text"><img src={messages} class="img-responsive img-icon" />Messages</h2>
                         </Link>
 
                     </div>
@@ -63,7 +59,7 @@ const Timeline = () => <div class="container-responsive">
                 <div class="row">
                     <div class="col ">
                         <Link class="color-text">
-                            <h2 class="t-text">Lists</h2>
+                            <h2 class="t-text"><img src={bookmarks} class="img-responsive img-icon" />Bookmarks</h2>
                         </Link>
 
                     </div>
@@ -71,14 +67,22 @@ const Timeline = () => <div class="container-responsive">
                 <div class="row">
                     <div class="col ">
                         <Link class="color-text">
-                            <h2 class="t-text">Profile</h2>
+                            <h2 class="t-text"><img src={lists} class="img-responsive img-icon" />Lists</h2>
+                        </Link>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col ">
+                        <Link class="color-text">
+                            <h2 class="t-text"><img src={profile} class="img-responsive img-icon" />Profile</h2>
                         </Link>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col ">
                         <Link class="color-text">
-                            <h2 class="t-text">More</h2>
+                            <h2 class="t-text"><img src={more} class="img-responsive img-icon" />More</h2>
                         </Link>
 
                     </div>
@@ -92,12 +96,21 @@ const Timeline = () => <div class="container-responsive">
         </div >
 
         <div class="col-md-7 borders">
-            <div class="m-0 vh-100 row justify-content-center align-items-center ">
+            <div class="m-4 row justify-content-start align-items-start mb-3">
+                <h3 class="t-text">Home</h3>
+            </div>
+            <div class="m-4 row justify-content-start align-items-start ">
+                <div class="col-md-1">
+                    <img src={profile} class="img-fluit img-user" />
+                </div>
+                <div class="col">
+                    <h3 class="t-text">Annie</h3>
+                </div>
             </div>
         </div>
 
         <div class="col-md-3 border-left">
-            <div class="m-3 row justify-content-start align-items-start search-heigth">
+            <div class="m-3 vh-100 row justify-content-start align-items-start search-heigth">
                 <div class="row mb-3">
                     <Form>
                         <Form.Group class="mb-3" controlId="formBasicSearch">
