@@ -1,11 +1,17 @@
 import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Metadata from './../../common/Metadata'
 import logo from "./../../../images/tweetlogo.jpg";
 import rectangle from "./../../../images/rectangle.jpg";
 import './../../../../src/App.css';
 import './../../../CSS/styleHome.css';
 
 const Home = () => <div className="container-responsive">
+
+    <Metadata
+        title="Welcome"
+        content={"Welcome to SabanaTweet"}
+    />
 
     <Row>
         <Col >

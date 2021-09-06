@@ -1,6 +1,7 @@
 import { width } from 'dom-helpers';
 import { Row, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Metadata from './../common/Metadata'
 import logo from "./../../images/tweetlogo.jpg";
 import home from "./../../icons/home.svg";
 import explore from "./../../icons/explore.svg";
@@ -14,6 +15,10 @@ import './../../CSS/styleTimeline.css';
 
 
 const Timeline = () => <div class="container-responsive">
+    <Metadata
+        title="Timeline"
+        content={"Let's explore what the world has to show"}
+    />
     <Row>
         <div class="col-md-2 border-right ">
             <div class="m-4 row justify-content-end align-items-end">

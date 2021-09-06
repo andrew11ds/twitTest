@@ -1,10 +1,16 @@
 import { Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Metadata from './../../common/Metadata'
 import logo from "./../../../images/tweetlogo.jpg";
 import './../../../../src/App.css';
 import './../../../CSS/styleLogin.css';
 
 const Login = () => <div className="container-fluid vh-100">
+
+    <Metadata
+        title="Login"
+        content={"Welcome to SabanaTweet, let's login"}
+    />
 
     <div className="m-0 vh-100 row justify-content-center align-items-center ">
 

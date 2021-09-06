@@ -1,12 +1,17 @@
 import { Helmet } from "react-helmet";
 import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Metadata from './../../common/Metadata'
 import logo from "./../../../images/tweetlogo.jpg";
 import rectangle from "./../../../images/rectangle.jpg";
 import './../../../../src/App.css';
 import './../../../CSS/styleSignUp.css';
 
 const SignUp = () => <div className="container-fluid vh-100" >
+    <Metadata
+        title="Sign up"
+        content={"Let's join Sabanatweet!"}
+    />
     <div className="m-0 vh-100 row justify-content-center align-items-center ">
 
         <div className="col-auto p-7 block-center mb-3">
