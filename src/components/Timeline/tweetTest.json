@@ -1,0 +1,22 @@
+[
+    {
+        "user": "@Annie",
+        "content": "Juguemos VR.",
+        "img": "src/icons/profile.svg"
+    },
+    {
+        "user": "@Annie",
+        "content": "Cuando se van a vacunar?",
+        "img": "src/icons/profile.svg"
+    },
+    {
+        "user": "@Annie",
+        "content": "Tengo hambre.",
+        "img": "src/icons/profile.svg"
+    },
+    {
+        "user": "@Annie",
+        "content": "En camino a tener un excelente dia.",
+        "img": "src/icons/profile.svg"
+    }
+]
