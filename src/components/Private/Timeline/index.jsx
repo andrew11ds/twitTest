@@ -1,19 +1,19 @@
 import { width } from 'dom-helpers';
 import { Row, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Feed from './../Tweets/Feed'
+import Feed from '../../Tweets/Feed'
 import tweetTest from './tweetTest.json'
-import Metadata from './../common/Metadata'
-import logo from "./../../images/tweetlogo.jpg";
-import home from "./../../icons/home.svg";
-import explore from "./../../icons/explore.svg";
-import notifications from "./../../icons/notifications.svg";
-import bookmarks from "./../../icons/bookmarks.svg";
-import messages from "./../../icons/messages.svg";
-import lists from "./../../icons/lists.svg";
-import profile from "./../../icons/profile.svg";
-import more from "./../../icons/more.svg";
-import './../../CSS/styleTimeline.css';
+import Metadata from '../../common/Metadata'
+import logo from "./../../../images/tweetlogo.jpg";
+import home from "./../../../icons/home.svg";
+import explore from "./../../../icons/explore.svg";
+import notifications from "./../../../icons/notifications.svg";
+import bookmarks from "./../../../icons/bookmarks.svg";
+import messages from "./../../../icons/messages.svg";
+import lists from "./../../../icons/lists.svg";
+import profile from "./../../../icons/profile.svg";
+import more from "./../../../icons/more.svg";
+import './../../../CSS/styleTimeline.css';
 
 
 

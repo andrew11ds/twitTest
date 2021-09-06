@@ -4,7 +4,7 @@ import Home from './../components/Public/Home';
 import Test from './../components/Test'
 import PasswordRecovery from './../components/PasswordRecovery';
 import Profile from './../components/Profile';
-import Timeline from './../components/Timeline';
+import Timeline from '../components/Private/Timeline';
 import Trending from './../components/Trending';
 import Search from './../components/Search';
 import RecoverPassword from '../components/Public/RecoverPassword';
