@@ -1,4 +1,4 @@
-.t-title-login{
+.t-title-login {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -6,7 +6,7 @@
     line-height: 35px;
 }
 
-.t-btn-login{
+.t-btn-login {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -14,7 +14,7 @@
     line-height: 19px;
 }
 
-.t-text-login{
+.t-text-login {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -22,7 +22,7 @@
     line-height: 19px;
 }
 
-.t-text2-login{
+.t-text2-login {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -30,12 +30,27 @@
     line-height: 16px;
 }
 
-.btn-properties-login{
+.btn-properties-login {
     width: 347px;
     height: 50px;
 }
 
-.textfield-properties-login{
+.btn-color-blue {
+    background: #1da1f2;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+}
+
+.btn-color-blue:hover {
+    background: rgba(29, 161, 242, 0.5);
+    border-radius: 5px;
+}
+.textfield-properties-login {
     width: 350px;
     height: 50px;
 }

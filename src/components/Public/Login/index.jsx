@@ -44,7 +44,7 @@ const Login = () => <div className="container-fluid vh-100">
                 <div className="row mb-3">
                     <div className="d-grid gap-2 mb-3">
                         <Link to="/home">
-                            <button type="button" className="btn w-100 btn-primary btn-lg btn-block btn-properties-login">Login now</button>
+                            <button type="button" className="btn w-100 btn-color-blue btn-lg btn-block btn-properties-login">Login now</button>
                         </Link>
 
 
