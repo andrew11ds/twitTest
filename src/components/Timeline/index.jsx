@@ -1,6 +1,7 @@
 import { width } from 'dom-helpers';
 import { Row, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Metadata from "./../common/Metadata/index.jsx";
 import logo from "./../../images/tweetlogo.jpg";
 import home from "./../../icons/home.svg";
 import explore from "./../../icons/explore.svg";
@@ -104,7 +105,7 @@ const Timeline = () => <div class="container-responsive">
                     <img src={profile} class="img-fluit img-user" />
                 </div>
                 <div class="col">
-                    <h3 class="t-text">Annie</h3>
+
                 </div>
             </div>
         </div>
