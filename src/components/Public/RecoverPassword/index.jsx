@@ -1,11 +1,15 @@
 import { Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import Metadata from './../../common/Metadata'
 import logo from "./../../../images/tweetlogo.jpg";
 import './../../../../src/App.css';
 import './../../../CSS/styleLogin.css';
 
 const RecoverPassword = () => <div className="container-fluid vh-100">
-
+    <Metadata
+        title="Forgot your password"
+        content={"Enter your information to recover your account access"}
+    />
     <div className="m-0 vh-100 row justify-content-center align-items-center ">
 
         <div className="col-auto p-5 block-center mb-3">

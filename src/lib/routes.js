@@ -4,11 +4,11 @@ import Home from './../components/Public/Home';
 import Test from './../components/Test'
 import PasswordRecovery from './../components/PasswordRecovery';
 import Profile from './../components/Profile';
-import Timeline from './../components/Timeline';
-import Tweets from './../components/Tweets';
+import Timeline from '../components/Private/Timeline';
 import Trending from './../components/Trending';
 import Search from './../components/Search';
 import RecoverPassword from '../components/Public/RecoverPassword';
+import Dummy from '../components/Public/Dummy';
 
 
 const routes = {
@@ -44,6 +44,11 @@ const routes = {
             title: "Test",
             path: "/test",
             component: Test,
+        },
+        {
+            title: "Dummy",
+            path: "/dummy",
+            component: Dummy,
         },
     ]
 }

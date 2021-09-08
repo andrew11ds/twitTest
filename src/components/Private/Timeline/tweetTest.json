@@ -1,0 +1,26 @@
+[
+    {
+        "user": "@Annie",
+        "name": "Annie",
+        "content": "Juguemos VR.",
+        "img": "src/images/img-tweets/img-tweet1.jpg"
+    },
+    {
+        "user": "@bepalacio",
+        "name": "Brayan Palacio",
+        "content": "Cuando se van a vacunar?",
+        "img": "src/images/img-tweets/img-tweet2.jpg"
+    },
+    {
+        "user": "@andrew11ds",
+        "name": "Andrew",
+        "content": "This is a tweet. It can be long, or short. Depends on what you have to say. It can have some hashtags too. #likethis ",
+        "img": "src/images/img-tweets/img-tweet1.jpg"
+    },
+    {
+        "user": "@Crystal_Robinson",
+        "name": "Serenity Jones",
+        "content": "This is a tweet. It can be long, or short. Depends on what you have to say. It can have some hashtags too. #likethis. This is a tweet. It can be long, or short. Depends on what you have to say. It can have some hashtags too. #likethis This is a tweet. It can be long, or short. Depends on what you have to say. It can have some hashtags too. #likethis",
+        "img": "src/images/img-tweets/img-tweet2.jpg"
+    }
+]
