@@ -36,7 +36,7 @@ const Home = () => <div className="container-responsive">
                         <div className="d-grid gap-2 mb-4">
 
                             <Link to="/login">
-                                <button type="button" className="btn w-100 btn-lg btn-block btn-outline-primary t-btn-home btn-properties-home">Login now</button>
+                                <button type="button" className="btn w-100 btn-lg btn-block btn-color-white t-btn-home btn-properties-home">Login now</button>
                             </Link>
 
                         </div>
@@ -46,7 +46,7 @@ const Home = () => <div className="container-responsive">
 
                         <div className="d-grid gap-2 mb-4">
                             <Link to="/signup">
-                                <button type="button" className="btn w-100 btn-outline-primary btn-lg btn-block t-btn-home btn-properties-home">Sign up</button>
+                                <button type="button" className="btn w-100 btn-color-white btn-lg btn-block t-btn-home btn-properties-home">Sign up</button>
                             </Link>
                         </div>
 

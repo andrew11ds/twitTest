@@ -35,7 +35,7 @@
     stroke: currentColor;
     fill: currentColor;
 }
-  
+
 .icon-name {
     font-size: 32px;
     color: #333333;
@@ -92,6 +92,8 @@ a {
     flex-grow: 0;
     margin: 16px 0px;
 }
+
+
 .search-heigth {
     max-height: 3%;
 }
