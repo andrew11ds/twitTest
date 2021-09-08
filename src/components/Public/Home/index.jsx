@@ -25,7 +25,7 @@ const Home = () => <div className="container-responsive">
                     <div className="col-auto p-5 block-center">
                         <div className="mb-4 text-center">
                             <Link to="/">
-                                <img src={logo} classNAme="img-responsive" alt="" />
+                                <img src={logo} className="img-responsive" alt="" />
                             </Link>
 
                         </div>

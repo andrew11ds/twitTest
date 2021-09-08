@@ -9,6 +9,7 @@ const Feed = ({ tweets }) => {
             {tweets.map((tweet) => (
                 <Tweet
                     user={tweet.user}
+                    name={tweet.name}
                     content={tweet.content}
                     img={tweet.img}
                 />

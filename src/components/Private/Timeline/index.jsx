@@ -111,17 +111,6 @@ const Timeline = () => {
                         <h3 class="t-text">Home</h3>
 
                     </div>
-
-
-                    <div class="m-4 row justify-content-start align-items-start ">
-                        <div class="col-md-1">
-                            <img src={profile} class="img-fluit img-user" />
-                        </div>
-                        <div class="col">
-                            <h3 class="t-text">Annie</h3>
-                        </div>
-
-                    </div>
                     <Feed tweets={tweetTest} />
                 </div>
 
