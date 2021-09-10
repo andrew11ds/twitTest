@@ -1,4 +1,4 @@
-.name-prop{
+.name-prop {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -9,10 +9,9 @@
     flex-grow: 0;
     margin: 0px 4px;
     color: #000000;
-
 }
 
-.user-prop{
+.user-prop {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -25,7 +24,7 @@
     color: #828282;
 }
 
-.content-prop{
+.content-prop {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -35,16 +34,21 @@
     text-align: justify;
 }
 
-.img-prop{
-  width: 724px;
-  height: 435px;
+.img-prop {
+    width: 724px;
+    height: 435px;
 }
 
-.border-top {
-    border-top: 1px solid #ddd;
+.border-bottom {
+    border-bottom: 1px solid #ddd;
+    padding-top: 10px;
 }
 
-.icon-size{
+.icon-size {
     max-width: 70px;
     max-height: 70px;
+}
+
+.header {
+    display: inline;
 }

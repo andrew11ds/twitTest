@@ -1,7 +1,7 @@
 import { width } from 'dom-helpers';
 import { Row, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Feed from '../../Tweets/Feed'
+import Feed from "./../Tweets"
 import tweetTest from './tweetTest.json'
 import Metadata from '../../common/Metadata'
 import logo from "./../../../images/tweetlogo.jpg";

@@ -2,25 +2,31 @@
     {
         "user": "@Annie",
         "name": "Annie",
+        "picture": "/images/profiles/1.svg",
+        "verified": "true",
         "content": "Juguemos VR.",
-        "img": "./../../img-tweets/img-tweet1.jpg"
+        "img": "/images/tweets/oculus.jpg"
     },
     {
         "user": "@bepalacio",
         "name": "Brayan Palacio",
-        "content": "Cuando se van a vacunar?",
-        "img": "src/images/img-tweets/img-tweet2.jpg"
-    },
-    {
-        "user": "@andrew11ds",
-        "name": "Andrew",
-        "content": "This is a tweet. It can be long, or short. Depends on what you have to say. It can have some hashtags too. #likethis ",
-        "img": "src/images/img-tweets/img-tweet1.jpg"
+        "picture": "/images/profiles/2.svg",
+        "verified": "false",
+        "content": "Cuando se van a vacunar?"
     },
     {
         "user": "@Crystal_Robinson",
         "name": "Serenity Jones",
-        "content": "This is a tweet. It can be long, or short. Depends on what you have to say. It can have some hashtags too. #likethis. This is a tweet. It can be long, or short. Depends on what you have to say. It can have some hashtags too. #likethis This is a tweet. It can be long, or short. Depends on what you have to say. It can have some hashtags too. #likethis",
-        "img": "src/images/img-tweets/img-tweet2.jpg"
+        "picture": "/images/profiles/3.svg",
+        "verified": "false",
+        "content": "Este partido estuvo de lujo",
+        "img": "/images/tweets/partido.jpg"
+    },
+    {
+        "user": "@andrew11ds",
+        "name": "Andrew",
+        "picture": "/images/profiles/4.svg",
+        "verified": "true",
+        "content": "This is a tweet. It can be long, or short. Depends on what you have to say. It can have some hashtags too. #likethis "
     }
 ]
