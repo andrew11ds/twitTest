@@ -3,7 +3,7 @@
         "user": "@Annie",
         "name": "Annie",
         "content": "Juguemos VR.",
-        "img": "src/images/img-tweets/img-tweet1.jpg"
+        "img": "./../../img-tweets/img-tweet1.jpg"
     },
     {
         "user": "@bepalacio",

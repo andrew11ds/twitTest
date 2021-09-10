@@ -21,6 +21,16 @@
 .border-left {
     border-left: 1px solid #ddd;
 }
+@media (min-width: 768px){
+.col-md-7 {
+    flex: 0 0 auto;
+    width: 50.33333333%;
+}
+.col-md-2 {
+    flex: 0 0 auto;
+    width: 20.33333333%;
+}
+}
 
 .logo-properties {
     width: 30.27px;
