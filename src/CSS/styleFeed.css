@@ -11,6 +11,7 @@
     color: #000000;
 
 }
+
 .user-prop{
     font-family: Roboto;
     font-style: normal;
@@ -31,11 +32,12 @@
     font-size: 15px;
     line-height: 22px;
     color: #333333;
+    text-align: justify;
 }
 
 .img-prop{
-  width: 824px;
-  height: 535px;
+  width: 724px;
+  height: 435px;
 }
 
 .border-top {

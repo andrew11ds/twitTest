@@ -27,7 +27,7 @@ const Timeline = () => {
 
             <Row>
                 <div class="col-md-2 border-right ">
-                    <div class="m-4 row justify-content-end align-items-end">
+                    <div class="m-5 row justify-content-end align-items-end">
                         <div class="col ">
                             <Link to="/">
                                 <img src={logo} class="img-responsive logo-properties" />
