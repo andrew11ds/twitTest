@@ -1,3 +1,6 @@
+# SabanaTweet link in firebase:
+https://sabanatweet.web.app
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -183,7 +186,7 @@ Nota: Si el comando npm install -g firebase-tools falla, es posible que debas ca
 
 Inicializa el proyecto
 Para conectar los archivos del proyecto local al proyecto de Firebase, ejecuta el siguiente comando desde la raíz del directorio del proyecto local:
-firebase init hosting
+### `firebase init` 
 Durante la inicialización del proyecto, desde los mensajes de Firebase CLI, haz lo siguiente:
 
 Selecciona el proyecto de Firebase para conectar al directorio del proyecto local.
@@ -206,9 +209,6 @@ Un archivo .firebaserc, en el que se almacenan los alias de tu proyecto.
 Paso 3: Realiza implementaciones en tu sitio
 Para realizar implementaciones en tu sitio, ejecuta el siguiente comando desde la raíz del directorio del proyecto local:
 
-firebase deploy --only hosting
-Nota: Si ejecutas este comando con la marca --only hosting, solo implementarás el contenido y la configuración de Hosting. Si también deseas implementar otros recursos o configuraciones del proyecto (como funciones o reglas de bases de datos), ejecuta este comando con una lista separada por comas en la marca (por ejemplo, --only hosting,functions).
-Con este comando, se implementa tu contenido y configuración de Hosting en los siguientes subdominios aprovisionados por Firebase:
+### `firebase deploy` 
 
-PROJECT_ID.web.app
-PROJECT_ID.firebaseapp.com
+Con este comando, se implementa tu contenido y configuración de Hosting en los siguientes subdominios aprovisionados por Firebase.
