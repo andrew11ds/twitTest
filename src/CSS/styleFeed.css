@@ -36,12 +36,16 @@
 }
 
 .img-prop{
-  width: 724px;
-  height: 435px;
+  width: 824px;
+  height: 535px;
 }
 
 .border-top {
     border-top: 1px solid #ddd;
+}
+
+.border-botton {
+    border-bottom: 1px solid #ddd;
 }
 
 .icon-size{
