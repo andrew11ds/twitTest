@@ -10,7 +10,7 @@ import './../../CSS/styleFeed.css';
 const Tweet = ({ user, content, img, name }) => {
     return (
         <>
-            <div class="row border-botton mb-4">
+            <div class="row border-botton mb-3">
                 <div class="col-md-1 icon-size ">
                     <img src={prof} />
                 </div>
