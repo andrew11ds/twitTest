@@ -103,6 +103,12 @@ const Timeline = () => {
                                 <button type="button" class="btn w-100 btn-primary btn-lg btn-block btn-properties">Tweet</button>
                             </Link>
                         </div>
+                        <div class="row">
+                                <Link to="/login">
+                                <button type="button" class="btn w-100 btn-primary btn-lg btn-block btn-properties">Cerrar sesión</button>
+                            </Link>
+                        </div>
+
                     </div>
                 </div >
 

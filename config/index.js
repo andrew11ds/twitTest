@@ -31,7 +31,7 @@ var T = new Twit({
 */
 
 
-/* METODO QUE CREO QUE USA EL PROFESOR: */
+/* METODO QUE CREO QUE USA EL PROFESOR: 
 const dotenv = require("dotenv");
 
 dotenv.config();
@@ -54,7 +54,7 @@ const config = {
 };
 
 module.exports = { config };
-
+*/
 
  /* ESTO LO TOMÉ DE POSTMAN:
 {
