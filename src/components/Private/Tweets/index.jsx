@@ -10,8 +10,11 @@ const Feed = ({ tweets }) => {
                 <Tweet
                     user={tweet.user}
                     name={tweet.name}
+                    picture={tweet.picture}
+                    verified={tweet.verified}
                     content={tweet.content}
                     img={tweet.img}
+
                 />
 
             ))}

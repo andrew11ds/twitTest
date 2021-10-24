@@ -54,7 +54,9 @@ const SignUp = () => <div className="container-fluid vh-100" >
                 </div>
 
                 <div className="d-grid gap-2 mb-4">
-                    <button type="button" className="btn w-100 btn-primary btn-lg btn-block btn-properties-sgu">Sign Up</button>
+                    <Link to="/home">
+                        <button type="button" className="btn w-100 btn-color-blue btn-lg btn-block btn-properties-login">Sign up</button>
+                    </Link>
 
                 </div>
 
