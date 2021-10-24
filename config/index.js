@@ -1,7 +1,37 @@
-/* "key": "x-access-token",
-"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDgyMGYyYWZkNTFiOWFmMDJkNzgwNDkiLCJpYXQiOjE2MTkxMzYzMDR9.cI4LB8Gs5f0lNKKmLN2O0-bpL1wapA8EoSUMM1_hIWs",
-"type": "text" */
 
+/* 
+LAS CREDECIALES:
+"key": "x-access-token",
+"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDgyMGYyYWZkNTFiOWFmMDJkNzgwNDkiLCJpYXQiOjE2MTkxMzYzMDR9.cI4LB8Gs5f0lNKKmLN2O0-bpL1wapA8EoSUMM1_hIWs",
+"type": "text" 
+*/
+
+/* Yo lo hice de esta forma (Victor)
+librerias:
+twit:  npm install twit
+## Defino twit que es una libreria que funciona con nodejs para conectarse a twitter en tiempo real##
+const Twit = require('twit')
+const notifier = require('node-notifier');
+const open = require('open');
+const franc = require('franc')
+
+const apikey = 'xxx'
+const apiSecretKey = 'xxx'
+const accessToken = 'xxx'
+const accessTokenSecret = 'xxx'
+
+var T = new Twit({
+  consumer_key:         apikey,
+  consumer_secret:      apiSecretKey,
+  access_token:         accessToken,
+  access_token_secret:  accessTokenSecret,
+});
+## Aquí ya la conexión se debió establecer correctamente"  ##
+
+*/
+
+
+/* METODO QUE CREO QUE USA EL PROFESOR: */
 const dotenv = require("dotenv");
 
 dotenv.config();
@@ -26,7 +56,7 @@ const config = {
 module.exports = { config };
 
 
- /*
+ /* ESTO LO TOMÉ DE POSTMAN:
 {
 	"item": [
 		{
