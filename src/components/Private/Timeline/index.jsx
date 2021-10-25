@@ -34,10 +34,11 @@ const Timeline = () => {
     const handlecreateTweet = (event) => {
         console.log("User: ", user.token);
         event.preventDefault();
-        createTweetUser(content).then((data) => {
+        createTweetUser(content, user.token).then((data) => {
             // if("){
                 // const user = data.data;
-                console.log("Content ", content);
+                
+                console.log("Content ", data);
                 history.push("/");
                 
             // }

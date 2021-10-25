@@ -21,17 +21,12 @@ const signUpUser = async (username, password, passwordConfirmation, name, email)
     return json;
 }
 
-const createTweetUser = async (content) => {
+const createTweetUser = async (content, token) => {
     
-    // const headers = {
-    //     key,
-    //     value,
-    //     type
-    // };
-    const data ={
+    const body ={
         content
     }
-    const json = await postTweet("tweets", data);
+    const json = await postTweet("tweets", body, token);
     return json;
 }
 
