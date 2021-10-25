@@ -9,4 +9,16 @@ const loginUser = async (username, password) => {
     return json;
 }
 
-export { loginUser }
+const signUpUser = async (username, password, passwordConfirmation, name, email) => {
+    const user = {
+        username,
+        password,
+        passwordConfirmation,
+        name,
+        email
+    };
+    const json = await post("users", user);
+    return json;
+}
+
+export { loginUser, signUpUser }
