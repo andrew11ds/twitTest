@@ -4,11 +4,12 @@ import Nav from './components/Nav';
 import routes from './lib/routes';
 import { AuthContext } from './context/AuthContext';
 import Timeline from './components/Private/Timeline';
-import { useContext, useState } from 'react';
+import { useContext, useState, useEffect } from 'react';
 
 
 const App = () => {
   const { restricted, unrestricted } = routes;
+  
   const {user, isLoggedIn} = useContext(AuthContext);
   const isAuth = isLoggedIn();
   return (

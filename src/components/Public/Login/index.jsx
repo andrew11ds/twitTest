@@ -21,6 +21,7 @@ const Login = () => {
             if(data.message === "ok"){
                 const user = data.data;
                 auth.login(user);
+                alert('Login Success!');
                 history.push("/");
                 
             }

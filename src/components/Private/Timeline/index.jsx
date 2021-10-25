@@ -16,7 +16,7 @@ import more from "./../../../icons/more.svg";
 import './../../../CSS/styleTimeline.css';
 import { AuthContext } from '../../../context/AuthContext'; 
 import { useContext, useState } from 'react';
-import { createTweetUser } from "./../../../services/userService";
+import { createTweetUser, getTweets } from "./../../../services/userService";
 import { useHistory } from  "react-router";
 import Login from '../../Public/Login';
 import Home from '../../Public/Home';
@@ -29,6 +29,7 @@ const Timeline = () => {
     const isAuth = isLoggedIn();
     console.log("logged?", isAuth);
     console.log("count");
+    var count = 0;
     const [content, setContent] = useState("");
     const history = useHistory();
     const handlecreateTweet = (event) => {
@@ -39,6 +40,8 @@ const Timeline = () => {
                 // const user = data.data;
                 
                 console.log("Content ", data);
+                alert('Tweet sent!');
+                content.text = "";
                 history.push("/");
                 
             // }
@@ -180,6 +183,26 @@ const Timeline = () => {
                                 <div class="row sidebar-height mb-3">
                                     <h3 class="t-text sidebar-title">Paris Trend</h3>
                                 </div>
+                                {/* <div>
+                                    {getTweets(user.token).then((data) =>{
+                                        console.log("count", count);
+                                        console.log("tweets", data.data[1].user);
+                                        
+                                            data.data.map((tweet) => {
+                                                count = count + 1;
+                                                <div class="row border-top sidebar-height">
+                                                    <h2 class="sidebar-text">..</h2>
+                                                    <h2 class="t-text">{tweet.content}</h2>
+                                                    
+                                                </div>
+            
+                                            });
+                                    }).catch((err) => {
+                                        console.log("err",err);
+                                    })
+                                    }
+
+                                </div> */}
     
                                 <div class="row sidebar-height">
                                     <h2 class="sidebar-text">1. Trending</h2>
@@ -187,12 +210,14 @@ const Timeline = () => {
                                     <h2 class="text-count">456K Tweets</h2>
     
                                 </div>
-    
-                                <div class="row border-top sidebar-height">
+                                <div class="row sidebar-height">
                                     <h2 class="sidebar-text">2. Trending</h2>
                                     <h2 class="t-text">#JessieMueller</h2>
                                     <h2 class="text-count">456K Tweets</h2>
+    
                                 </div>
+    
+                                
                                 <div class="row border-top sidebar-height">
                                     <h2 class="sidebar-text">3. Trending</h2>
                                     <h2 class="t-text">#JessieMueller</h2>
@@ -224,6 +249,7 @@ const Timeline = () => {
                         <div class="m-3 vh-100 row justify-content-start align-items-start search-heigth">
                                 <Link >
                                     <button type="button" class="btn w-100 btn-primary btn-lg btn-block btn-props" onClick={logout}>Logout</button>
+                                    
                                 </Link>
                         </div>
                     </div>

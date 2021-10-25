@@ -53,10 +53,11 @@ const getTweet = async (endpoint, token) => {
         const response = await fetch(`${httpAPI}/${endpoint}`, {
             method: "GET",
             headers: {
-                'x-access-token': token,
+                'x-access-token': "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTc0NGI1MWRjOTEwNDFhZDAwZTg4MDAiLCJpYXQiOjE2MzUxMjkyNzN9.MEDJ4H-oMvgjQeptd3CT5dhjwC52ajH-zq9WP2WmXlc",
                 'Content-Type':'application/json'        
             } 
         });
+        // console.log("Tweets ", response.json());
         return response.json();
     } catch(err){
         return null;
@@ -75,6 +76,7 @@ const deleteTweet = async (endpoint, token) => {
                 'Content-Type':'application/json'        
             } 
         });
+        
         return response.json();
     } catch(err){
         return null;

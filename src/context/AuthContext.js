@@ -17,6 +17,7 @@ const AuthProvider = (props) => {
 
     const logout = () => {
         setUser({});
+        
         localStorage.removeItem("user");
     };
 
