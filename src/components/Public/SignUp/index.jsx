@@ -25,6 +25,7 @@ const SignUp = () =>{
        signUpUser(username, password, passwordConfirmation, name, email).then((data) => {
             if(data.role === "registered"){
                 // const user = data.data;
+                alert('User '+username+' has been registered');
                 history.push("/");
                 
             }

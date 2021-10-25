@@ -1,4 +1,4 @@
-import { post, postTweet } from "./http";
+import { post, postTweet, getTweet } from "./http";
 
 const loginUser = async (username, password) => {
     const user = {
@@ -30,4 +30,11 @@ const createTweetUser = async (content, token) => {
     return json;
 }
 
-export { loginUser, signUpUser, createTweetUser }
+const getTweets = async (token) => {
+    
+    
+    const json = await getTweet("tweets", token);
+    return json;
+}
+
+export { loginUser, signUpUser, createTweetUser, getTweets }
