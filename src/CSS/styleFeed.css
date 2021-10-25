@@ -1,54 +1,58 @@
 .name-prop {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 18px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 4px;
-    color: #000000;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 4px;
+  color: #000000;
 }
 
 .user-prop {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 18px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 4px;
-    color: #828282;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 4px;
+  color: #828282;
 }
 
 .content-prop {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 22px;
-    color: #333333;
-    text-align: justify;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: #333333;
+  text-align: justify;
 }
 
 .img-prop {
-    width: 724px;
-    height: 435px;
+  width: 824px;
+  height: 535px;
 }
 
 .border-bottom {
-    border-bottom: 1px solid #ddd;
-    padding-top: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.border-botton {
+  border-bottom: 1px solid #ddd;
 }
 
 .icon-size {
-    max-width: 70px;
-    max-height: 70px;
+  max-width: 70px;
+  max-height: 70px;
 }
 
 .header {
-    display: inline;
+  display: inline;
 }

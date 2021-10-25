@@ -18,7 +18,7 @@ const Home = () => <div className="container-responsive">
             <img src={rectangle} className="img-responsive w-100" />
 
         </Col>
-
+        
         <Col >
             <div className="container h-100">
                 <div className="m-0 vh-100 row justify-content-center align-items-center ">
