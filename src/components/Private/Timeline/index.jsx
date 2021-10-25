@@ -16,6 +16,8 @@ import more from "./../../../icons/more.svg";
 import './../../../CSS/styleTimeline.css';
 import { AuthContext } from '../../../context/AuthContext'; 
 import { useContext, useState } from 'react';
+import { createTweetUser } from "./../../../services/userService";
+import { useHistory } from  "react-router";
 import Login from '../../Public/Login';
 import Home from '../../Public/Home';
 
@@ -23,10 +25,28 @@ import Home from '../../Public/Home';
 
 const Timeline = () => {
 
-    const { isLoggedIn, logout} = useContext(AuthContext);
+    const { isLoggedIn, logout, user} = useContext(AuthContext);
     const isAuth = isLoggedIn();
     console.log("logged?", isAuth);
     console.log("count");
+    const [content, setContent] = useState("");
+    const history = useHistory();
+    const handlecreateTweet = (event) => {
+        console.log("User: ", user.token);
+        event.preventDefault();
+        createTweetUser(content, user.token).then((data) => {
+            // if("){
+                // const user = data.data;
+                
+                console.log("Content ", data);
+                history.push("/");
+                
+            // }
+       }).catch((err) => {
+            console.log("err",err);
+       })
+
+    }
     if (isAuth){
         
         return (
@@ -123,8 +143,27 @@ const Timeline = () => {
                             <h3 class="t-text">Home</h3>
     
                         </div>
+                        <div class="m-4 row justify-content-start align-items-start mb-3">
+                            <div className="input-group">
+                                <div className="input-group-prepend">
+                                    <span className="input-group-text" id="basic-addon">
+                                    <i className="fas fa-pencil-alt prefix"></i>
+                                    </span>
+                                </div>
+                            <textarea className="form-control" id="exampleFormControlTextarea1" rows="5" onChange={e=>setContent(e.target.value)} value={content}></textarea>
+                        </div>
+                        <div class="m-4 row justify-content-start align-items-start mb-3">
+                            <Link >
+                                <button type="button" class="btn w-100 btn-primary btn-lg btn-block btn-properties" onClick={handlecreateTweet}>Send</button>
+                            </Link>
+    
+                        </div>
+    
+                        </div>
                         <Feed tweets={tweetTest} />
                     </div>
+
+                    
     
                     <div class="col-md-3 border-left">
                         <div class="m-3 vh-100 row justify-content-start align-items-start search-heigth">

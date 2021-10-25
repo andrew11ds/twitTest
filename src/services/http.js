@@ -27,4 +27,59 @@ const post = async (endpoint, data) => {
     
 }; 
 
-export { get, post}; 
+const postTweet = async (endpoint, content, token) => {
+    try {
+        console.log("POST");
+        console.log("Token: ", token);
+        const response = await fetch(`${httpAPI}/${endpoint}`, {
+            method: "POST",
+            body: JSON.stringify(content),
+            headers: {
+                'x-access-token': token,
+                'Content-Type':'application/json'        
+            } 
+        });
+        return response.json();
+    } catch(err){
+        return null;
+    }
+    
+};
+
+const getTweet = async (endpoint, token) => {
+    try {
+        console.log("GET");
+        console.log("Token: ", token);
+        const response = await fetch(`${httpAPI}/${endpoint}`, {
+            method: "GET",
+            headers: {
+                'x-access-token': token,
+                'Content-Type':'application/json'        
+            } 
+        });
+        return response.json();
+    } catch(err){
+        return null;
+    }
+    
+};
+
+const deleteTweet = async (endpoint, token) => {
+    try {
+        console.log("DELETE");
+        console.log("Token: ", token);
+        const response = await fetch(`${httpAPI}/${endpoint}`, {
+            method: "GET",
+            headers: {
+                'x-access-token': token,
+                'Content-Type':'application/json'        
+            } 
+        });
+        return response.json();
+    } catch(err){
+        return null;
+    }
+    
+};
+
+export { get, post, postTweet, getTweet, deleteTweet}; 
