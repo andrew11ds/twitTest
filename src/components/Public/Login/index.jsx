@@ -7,12 +7,13 @@ import './../../../../src/App.css';
 import './../../../CSS/styleLogin.css';
 import { useState, useContext } from "react";
 import { AuthContext } from '../../../context/AuthContext';
-
+import { useHistory } from  "react-router";
 
 const Login = () => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const auth = useContext(AuthContext);
+    const history = useHistory();
     const handleLogin = (event) => {
         console.log("Hola mundo");
         event.preventDefault();
@@ -20,6 +21,7 @@ const Login = () => {
             if(data.message === "ok"){
                 const user = data.data;
                 auth.login(user);
+                history.push("/");
                 
             }
        }).catch((err) => {

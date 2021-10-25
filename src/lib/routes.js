@@ -15,7 +15,7 @@ const routes = {
     restricted: [
         {
             title: "Home",
-            path: "/home",
+            path: "/",
             component: Timeline,
         },
     ],
