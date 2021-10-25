@@ -27,4 +27,19 @@ const post = async (endpoint, data) => {
     
 }; 
 
-export { get, post}; 
+const postTweet = async (endpoint, data) => {
+    try {
+        console.log("POST");
+        const response = await fetch(`${httpAPI}/${endpoint}`, {
+            method: "POST",
+            body: JSON.stringify(data),
+            headers: {"Content-Type":"application/json; charset=UFT-8"}
+        });
+        return response.json();
+    } catch(err){
+        return null;
+    }
+    
+}; 
+
+export { get, post, postTweet}; 
