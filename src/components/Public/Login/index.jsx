@@ -18,6 +18,7 @@ const Login = () => {
         console.log("Hola mundo");
         event.preventDefault();
        loginUser(username, password).then((data) => {
+           console.log(data);
             if(data.message === "ok"){
                 const user = data.data;
                 auth.login(user);
