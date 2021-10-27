@@ -1,4 +1,4 @@
-import { post, get2,getTweet } from "./http";
+import { post, get2,getTweet, deleteTweet, postComment, postLike } from "./http";
 
 const getTweets = async () => {
     const json = await getTweet("tweets");
@@ -18,5 +18,20 @@ const createTweets = async (tweet) => {
     return json;
 }
 
+const deleteTweets = async (tweetId) => {
+    const json = await deleteTweet("tweets",tweetId);
+    return json;
+}
 
-export { getTweets, createTweets,getRealTweets }
+const postComments = async (comment, tweetId) => {
+    const json = await postComment("tweets/comments",comment,tweetId);
+    return json;
+}
+
+const postLikes = async (like, tweetId) => {
+    const json = await postLike("tweets/likes",like,tweetId);
+    return json;
+}
+
+
+export { getTweets, createTweets,getRealTweets, deleteTweets, postComments, postLikes }
