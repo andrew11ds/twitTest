@@ -21,10 +21,10 @@ const Feed = () => {
     }
         
 
-/*  
-    if (!tweets || tweets.length === 0) {
+ 
+    if (!tweetData || tweetData.length === 0) {
         return <h2>No tweets found</h2>
-    }*/
+    }
 
    // return <h2>Passed</h2>
 
