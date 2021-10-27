@@ -27,7 +27,7 @@ const Feed = () => {
     const exTweetData=[];
     console.log(exTweets);
     exTweets.map((exTweet)=>{
-        exTweetData.push({username:"@DeadByBHVR",name:"Dead by Daylight",content:exTweet.text})
+        exTweetData.push({username:"DeadByBHVR",name:"Dead by Daylight",content:exTweet.text})
     })
     console.log(exTweetData);
     if (!tweetData || tweetData.length === 0) {
@@ -43,7 +43,7 @@ const Feed = () => {
         <div>
             {tweetData.map((tweet) => (
                 <Tweet
-                    user={tweet.user.username}
+                    username={tweet.user.username}
                     name={tweet.user.name}
                   //  picture={tweet.picture}
                     //verified={tweet.verified}
@@ -53,14 +53,13 @@ const Feed = () => {
                 />
 
             ))
-
       }       
         </div>
 
         <div>
         {exTweetData.map((tweet) => (
                 <Tweet
-                    user={tweet.username}
+                    username={tweet.username}
                     name={tweet.name}
                   //  picture={tweet.picture}
                     //verified={tweet.verified}

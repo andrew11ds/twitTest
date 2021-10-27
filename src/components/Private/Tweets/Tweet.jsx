@@ -8,8 +8,9 @@ import Verified from './Verified';
 import './../../../CSS/styleFeed.css';
 
 const Tweet = (props) => {
-
+  
     const { username, content, img, name, picture, verified } = props;
+    console.log(username," ",name);
     return (
 
         <div class="row border-bottom">
@@ -23,7 +24,7 @@ const Tweet = (props) => {
                             <h2 className="name-prop header">  {name} <Verified verified={verified} />  </h2>
 
                         </Link>
-                        <h2 className="user-prop header">  {username}</h2>
+                        <h2 className="user-prop header">  @{username}</h2>
                     </div>
 
 
