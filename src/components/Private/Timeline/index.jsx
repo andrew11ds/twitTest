@@ -17,9 +17,11 @@ import './../../../CSS/styleTimeline.css';
 import { AuthContext } from '../../../context/AuthContext'; 
 import { useContext, useState } from 'react';
 import { createTweetUser, getTweets } from "./../../../services/userService";
+import { get2 } from '../../../services/http';
 import { useHistory } from  "react-router";
 import Login from '../../Public/Login';
 import Home from '../../Public/Home';
+import{getRealTweets} from '../../../services/tweetService';
 
 
 
@@ -60,6 +62,7 @@ const Timeline = () => {
     }
     
     if (isAuth){
+     //   console.log(getRealTweets());
         
         return (
             <div class="container-responsive">

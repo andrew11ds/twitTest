@@ -72,12 +72,12 @@ const getTweet = async (endpoint, token) => {
 
 const get2 = async (endpoint) => {
     try {
-        const url = `${httpAPI}/${endpoint}`;
+        const url = `${httpAPI}/${endpoint}/external/@DeadByBHVR`;
         const options = {
             method: "GET",
             headers:{
                 'Content-Type': 'application/json',
-                'x-access-token': token
+                'x-access-token': "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTc0NGI1MWRjOTEwNDFhZDAwZTg4MDAiLCJpYXQiOjE2MzUxMjkyNzN9.MEDJ4H-oMvgjQeptd3CT5dhjwC52ajH-zq9WP2WmXlc"
             }
         };
         const response = await fetch(url, options);
