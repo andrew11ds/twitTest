@@ -17,9 +17,11 @@ import './../../../CSS/styleTimeline.css';
 import { AuthContext } from '../../../context/AuthContext'; 
 import { useContext, useState } from 'react';
 import { createTweetUser, getTweets } from "./../../../services/userService";
+import { get2 } from '../../../services/http';
 import { useHistory } from  "react-router";
 import Login from '../../Public/Login';
 import Home from '../../Public/Home';
+import{getRealTweets} from '../../../services/tweetService';
 
 
 
@@ -32,6 +34,13 @@ const Timeline = () => {
     var count = 0;
     const [content, setContent] = useState("");
     const history = useHistory();
+    const setTimeLine= ()=>{
+        console.log("Aca");
+        getTweets(user.token).then((data)=>{
+            console.log(data);
+            return data;
+        })
+    }
     const handlecreateTweet = (event) => {
         console.log("User: ", user.token);
         event.preventDefault();
@@ -41,16 +50,19 @@ const Timeline = () => {
                 
                 console.log("Content ", data);
                 alert('Tweet sent!');
-                content.text = "";
+              //  content.text = "";
+             //   console.log(content);
                 history.push("/");
-                
+              //  getTweets(user.token);
             // }
        }).catch((err) => {
             console.log("err",err);
        })
 
     }
+    
     if (isAuth){
+     //   console.log(getRealTweets());
         
         return (
             <div class="container-responsive">
@@ -163,7 +175,7 @@ const Timeline = () => {
                         </div>
     
                         </div>
-                        <Feed tweets={tweetTest} />
+                        <Feed />
                     </div>
 
                     

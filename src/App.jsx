@@ -5,13 +5,10 @@ import routes from './lib/routes';
 import { AuthContext } from './context/AuthContext';
 import Timeline from './components/Private/Timeline';
 import { useContext, useState, useEffect } from 'react';
-// import { QueryClientProvider, QueryClient } from "react-query";
-// import { ReactQueryDevtools } from 'react-query/devtools'
 
 
 const App = () => {
   const { restricted, unrestricted } = routes;
-  // const queryClient = new QueryClient();
   const {user, isLoggedIn} = useContext(AuthContext);
   const isAuth = isLoggedIn();
   return (
@@ -20,7 +17,6 @@ const App = () => {
         <title>SabanaTweet</title>
         <meta name="description" content="Tweeter test" />
       </Helmet>
-      {/* <QueryClientProvider client={queryClient}> */}
       <BrowserRouter>
         
         {isAuth && user && <p>Welcome, {user?.name}</p>}
@@ -37,8 +33,6 @@ const App = () => {
         </Switch>
         
       </BrowserRouter>
-      {/* <ReactQueryDevtools initialIsOpen={false} />
-      </QueryClientProvider> */}
     </main>
   );
 };

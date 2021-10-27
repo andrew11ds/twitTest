@@ -34,6 +34,7 @@ const getTweets = async (token) => {
     
     
     const json = await getTweet("tweets", token);
+    console.log(json);
     return json;
 }
 
