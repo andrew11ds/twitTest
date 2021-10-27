@@ -30,6 +30,7 @@ const post = async (endpoint, data) => {
     
 }; 
 
+
 const postTweet = async (endpoint, content, token) => {
     try {
         console.log("POST");
@@ -37,6 +38,44 @@ const postTweet = async (endpoint, content, token) => {
         const response = await fetch(`${httpAPI}/${endpoint}`, {
             method: "POST",
             body: JSON.stringify(content),
+            headers: {
+                'x-access-token': token,
+                'Content-Type':'application/json'        
+            } 
+        });
+        return response.json();
+    } catch(err){
+        return null;
+    }
+    
+};
+
+const postComment = async (endpoint, comment, tweetId) => {
+    try {
+        console.log("POST");
+        console.log("Token: ", token);
+        const response = await fetch(`${httpAPI}/${endpoint}`, {
+            method: "POST",
+            body: JSON.stringify(comment, tweetId),
+            headers: {
+                'x-access-token': token,
+                'Content-Type':'application/json'        
+            } 
+        });
+        return response.json();
+    } catch(err){
+        return null;
+    }
+    
+};
+
+const postLike = async (endpoint, like, tweetId) => {
+    try {
+        console.log("POST");
+        console.log("Token: ", token);
+        const response = await fetch(`${httpAPI}/${endpoint}`, {
+            method: "POST",
+            body: JSON.stringify(like, tweetId),
             headers: {
                 'x-access-token': token,
                 'Content-Type':'application/json'        
@@ -87,12 +126,13 @@ const get2 = async (endpoint) => {
     }
 };
 
-const deleteTweet = async (endpoint, token) => {
+const deleteTweet = async (endpoint, token, tweetId) => {
     try {
         console.log("DELETE");
         console.log("Token: ", token);
         const response = await fetch(`${httpAPI}/${endpoint}`, {
-            method: "GET",
+            method: "DELETE",
+            body: JSON.stringify(tweetId),
             headers: {
                 'x-access-token': token,
                 'Content-Type':'application/json'        
@@ -106,4 +146,4 @@ const deleteTweet = async (endpoint, token) => {
     
 };
 
-export { get, post, postTweet, getTweet, deleteTweet,get2}; 
+export { get, post, postTweet, getTweet, deleteTweet,get2, postComment, postLike}; 
